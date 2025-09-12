@@ -9,3 +9,5 @@ Enhanced our HTML , CSS knowledge by learning the following:
 -- We completed a homework task.
 
 -- The homework is to continue styling a specific way of styling was told by our instructor, and you can find it in my repositpory. 
+
+-- Check the file : (home.html)
