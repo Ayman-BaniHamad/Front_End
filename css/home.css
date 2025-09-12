@@ -1,0 +1,80 @@
+body{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-color: blue;
+}
+#NavBar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between; 
+    margin: 5px;
+    border: 20px;
+}
+#NavBar>img{
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+#NavBar ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin-right: 50px;
+    align-items: center;
+}
+#NavBar a{
+    text-decoration: none;
+    background-color: blue;
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+}
+#MainID{
+    background-color: white;
+    border-radius: 5%;
+    }
+#MainID img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 70%;
+}
+#MainID h1{
+   text-align: center;
+   margin-top: -50px;
+}
+#MainID p{
+   text-align: center;
+    background-color:blue;
+    padding: auto;
+    border-radius: auto;
+    color: white;
+}
+#FooterID{
+    background-color: white;
+    display: flex;
+    justify-content: space-between; 
+    margin: 5px;
+    border: 20px;
+}
+#FooterID p{
+    margin-left: 450px;
+    background-color: blue;
+    color: white;
+
+}
+#FooterID ul{
+    list-style: none;
+    display: flex;
+    margin-right: 600px;
+    align-items: center;
+}
+#FooterID a{
+    text-decoration: none;
+    background-color: blue;
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+}
