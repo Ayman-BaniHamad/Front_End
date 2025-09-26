@@ -1,0 +1,67 @@
+body{
+background-color: black;
+}
+#NavBar{
+background:black;
+display:flex;
+justify-content:space-between;
+}
+#NavBar ul{
+list-style:none; 
+display:flex;
+gap:10px; 
+margin:0; 
+padding:0;
+align-items:center;
+}
+#NavBar a{
+text-decoration:none; 
+color:white; 
+padding:25px; 
+border-radius:14px;
+display:inline-block;
+}
+#NavBar a.btn{
+background:red; 
+}
+
+.SecCLass{
+max-width:1200px;
+margin:40px; 
+padding: 25px;
+display:flex; 
+align-items:center; 
+justify-content:space-between; 
+gap:48px;
+flex-wrap:wrap;
+}
+.secTxt{ 
+flex:1 1 520px; 
+}
+#MainID h1{
+background-image: linear-gradient(to right, white, red);
+background-clip: text;
+color: transparent;
+}
+#MainID p{ 
+color: white;
+}
+#MainID .ButtonsClass{ 
+display:flex; 
+gap: 20px; }
+#MainID button{
+padding: 25px;
+background:white; color:black
+}
+#MainID button.RedBtn{ 
+background:red; 
+color:white; 
+}
+.Burger-Image{ 
+max-width: 100%;
+height:auto; 
+display:block; 
+border-radius:0; }
+@media (max-width: 400px){
+    
+}
