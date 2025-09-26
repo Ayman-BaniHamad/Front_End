@@ -8,4 +8,5 @@
 | 3 | Intro 3 |[Link](./Classes/Class3.md)|
 | 4 | Lectue 4 |[Link](./Classes/Class3.md)|
 | 5 | Lecture 5 |[Link](./Classes/Class5.md)|
+| 6 | 2 Tasks | [Link](./Classes/2Tasks.md)|
 
