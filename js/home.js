@@ -24,3 +24,39 @@ if(age < 18){
 if (age >=10 ){
  console.log("Age is greater than 10");
 }
+function helloworld(){
+    alert("Hello World");
+}
+// DOM
+function jsBgColorChange(){
+    var jsPart = document.getElementById("jspart")
+     console.log('This is the JS part',jsPart)
+     jsPart.style.backgroundColor = "black"; 
+        jsPart.style.color = "white";
+    }
+function calculate(){
+    var num1 = document.getElementById("Num1").value;
+    var num2 = document.getElementById("Num2").value;
+    var op = document.getElementById("Op").value;
+    var result=0;
+    // switch case
+    switch(op){
+        case "+":
+            result = parseFloat(num1) + parseFloat(num2);
+            break;
+        case "-":
+            result = parseFloat(num1) - parseFloat(num2);
+            break;
+        case "*":
+            result = parseFloat(num1) * parseFloat(num2);
+            break;
+        case "/":
+            result = parseFloat(num1) / parseFloat(num2);
+            break;
+        default:
+            result = "Invalid Operator";
+    }   
+    document.getElementById("Result").innerHTML = result;
+        console.log(num1 , op , num2 ,  result);
+
+}

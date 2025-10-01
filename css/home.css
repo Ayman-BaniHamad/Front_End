@@ -120,7 +120,17 @@ button:hover{
 a:hover{
     background-color: navy !important;
 }
-
+#jspart button{
+padding: 10px 20px;
+border-radius: 20px;
+border: none;
+background-color: red;
+color: white;
+font-size: 20px;
+cursor: pointer;
+width: 200px;
+}
+/* Responsive Design */
 @media screen and (max-width:1200px ) {
         body{
 margin: 0px;
@@ -201,7 +211,6 @@ background-color: blue;
     border-radius: 20px;
     color: white;
 }
-   
 }
 @media screen and (max-width:600px ) {
     body{
