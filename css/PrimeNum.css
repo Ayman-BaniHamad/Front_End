@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(80, 120, 200, 0.15);
+    padding: 32px 24px;
+    text-align: center;
+}
+
+h1 {
+    color: #3a5ba0;
+    margin-bottom: 18px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+input[type="number"] {
+    padding: 10px 12px;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    width: 80%;
+    transition: border 0.2s;
+} 
+
+input[type="number"]:focus {
+    border-color: #3a5ba0;
+    outline: none;
+}
+
+button {
+    background: #3a5ba0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #274472;
+}
+#PrimeNumResult {
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
