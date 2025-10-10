@@ -1,4 +1,4 @@
-var age = 20;
+/*var age = 20;
 console.log("Age 1 = " , age);
 var age = 30;
 console.log("Age 2 = " , age);
@@ -9,7 +9,7 @@ console.log("Price 2 = " , price);
 const tax = 0.1;
 console.log("Tax 1 = " , tax);
 /*------------------------------*/ 
-var isNew = false;
+/*var isNew = false;
 var marks = [60 , 70 , 80 , 90 , 95];
 console.log("Marks = " , marks);
 var student = {
@@ -24,16 +24,23 @@ if(age < 18){
 if (age >=10 ){
  console.log("Age is greater than 10");
 }
+ */
 function helloworld(){
     alert("Hello World");
-}
+} 
 // DOM
 function jsBgColorChange(){
     var jsPart = document.getElementById("jspart")
-     console.log('This is the JS part',jsPart)
-     jsPart.style.backgroundColor = "black"; 
-        jsPart.style.color = "white";
+     console.log('This is the JS part',jsPart.style.backgroundColor)
+     //jsPart.style.backgroundColor = "black"; 
+     //  jsPart.style.color = "white";
+      if(jsPart.style.backgroundColor == "blue"){
+        jsPart.style.backgroundColor = "red";
     }
+    else{
+        jsPart.style.backgroundColor = "blue";
+    }
+}
 function calculate(){
     var num1 = document.getElementById("Num1").value;
     var num2 = document.getElementById("Num2").value;
@@ -60,3 +67,8 @@ function calculate(){
         console.log(num1 , op , num2 ,  result);
 
 }
+var switchToggle = document.getElementsByClassName("switch")[0];
+switchToggle.addEventListener('click', function(){
+    var checkbox = document.getElementById("checkbox");
+    console.log(checkbox.checked);
+});
