@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create Group — Jo Fields</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="icon" href="images/favicon.png" />
+</head>
+<body class="group-page">
+<header class="site-header">
+  <a class="logo" href="index.html">⚽ JO Fields</a>
+
+  <nav>
+    <a href="index.html">Home</a><a href="fields.html">Fields</a>
+    <a href="group.html">Group</a><a href="join.html">Join</a>
+    <a href="contact.html">Contact</a><a class="auth" href="auth.html">Sign In / Up</a>
+  </nav><button id="modeToggle">🌙</button>
+</header>
+
+<main class="container">
+  <h2>Create a group match</h2>
+  <form class="card" onsubmit="event.preventDefault(); alert('✅ Group match created!'); this.reset();">
+    <div class="form-row">
+      <div><label>Your name</label><input required></div>
+      <div><label>Players needed</label><input type="number" min="1" max="10" required></div>
+    </div>
+    <div class="form-row">
+      <div><label>Date</label><input type="date" required></div>
+      <div><label>Time</label><input type="time" required></div>
+    </div>
+    <div><label>Preferred location</label><input placeholder="Irbid / Ramtha / etc."></div>
+    <button class="btn" type="submit">Create match</button>
+  </form>
+</main>
+
+<footer class="site-footer"><p>© <span id="year"></span> JO Fields — Play anytime.</p></footer>
+<script src="js/script.js"></script>
+</body></html>
