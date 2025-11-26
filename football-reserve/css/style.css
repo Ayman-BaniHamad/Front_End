@@ -8,7 +8,7 @@
 }
 .dark{
   --bg:#0e1116;
-  --text:#e6edf3;
+  --text:yellow;
   --muted:#98a2ad;
   --primary:#4ea1ff;
   --card:#151a21;
@@ -43,6 +43,23 @@ body{
   width: 100%;
   z-index: 10;
 }
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-left: 12px;
+}
+
+.social-links a svg {
+  width: 28px;
+  height: 28px;
+  transition: 0.2s ease;
+}
+
+.social-links a svg:hover {
+  transform: scale(1.18);
+  opacity: 0.7;
+}
+
 
 .logo{color:var(--text); text-decoration:none; font-weight:700}
 nav{display:flex; gap:14px; flex-wrap:wrap}
@@ -90,6 +107,59 @@ label{font-size:14px; color:var(--muted)}
   margin: 0;
   padding: 0;
 } */
+/* Hero buttons layout */
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  justify-content: center;
+  flex-wrap: wrap;          /* allow wrapping on narrow screens */
+}
+
+.hero-actions .btn {
+  white-space: nowrap;      /* prevent ugly line breaks inside each button */
+  flex: 0 1 auto;
+  min-width: 140px;         /* keep a reasonable width */
+}
+
+/* Small screens tweaks */
+@media (max-width: 600px) {
+  .hero-overlay {
+    padding: 24px 16px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-overlay p.notice {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;    /* stack buttons vertically on mobile */
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .site-footer{
+  border-top: 1px solid var(--border);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  color: var(--text);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  }
+}
 
 .hero-overlay {
  background-color: rgba(0, 0, 0, 0.55);
